@@ -381,11 +381,11 @@ found at http://polymer.github.io/PATENTS.txt
           opacity: 1;
         }
       }
-    `}constructor(){super()}firstUpdated(){var e,t,i;(t=(e=navigator==null?void 0:navigator.serviceWorker)==null?void 0:e.controller)==null||t.postMessage({func:"restartScheduler"}),new U((i=this.shadowRoot)==null?void 0:i.querySelector("#routerOutlet")).setRoutes([{path:"/",animate:!0,children:[{path:"",component:"app-home"},{path:"about",component:"app-about",action:async()=>{await ae(()=>import("./app-about.3df3b6af.js"),[])}},{path:"main",component:"app-main",action:async()=>{await ae(()=>import("./app-main.6c867289.js"),[])}},{path:"sharebonus",component:"app-share-forbonus",action:async()=>{await ae(()=>import("./app-share-forbonus.5cae9045.js"),[])}},{path:"susunkata",component:"app-susunkata",action:async()=>{await ae(()=>import("./app-susunkata.48e17bcd.js"),[])}}]}]),Mi({immediate:!0})}render(){return pe`
+    `}constructor(){super()}firstUpdated(){var e,t,i;(t=(e=navigator==null?void 0:navigator.serviceWorker)==null?void 0:e.controller)==null||t.postMessage({func:"restartScheduler"}),new U((i=this.shadowRoot)==null?void 0:i.querySelector("#routerOutlet")).setRoutes([{path:"/",animate:!0,children:[{path:"",component:"app-home"},{path:"about",component:"app-about",action:async()=>{await ae(()=>import("./app-about.b3e430a5.js"),[])}},{path:"main",component:"app-main",action:async()=>{await ae(()=>import("./app-main.fd80dd20.js"),[])}},{path:"sharebonus",component:"app-share-forbonus",action:async()=>{await ae(()=>import("./app-share-forbonus.a22e01d8.js"),[])}},{path:"susunkata",component:"app-susunkata",action:async()=>{await ae(()=>import("./app-susunkata.84c65c80.js"),[])}}]}]),Mi({immediate:!0})}render(){return pe`
       <div>
         <main>
           <div id="routerOutlet"></div>
         </main>
       </div>
     `}};Vt=sr([Fe("app-index")],Vt);"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js");export{pe as $,K as e,Fe as n,ze as r,M as s};
-//# sourceMappingURL=index.680aebaf.js.map
+//# sourceMappingURL=index.1c82cf1a.js.map

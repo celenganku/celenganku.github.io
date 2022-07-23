@@ -1,4 +1,4 @@
-import{s as l,r as f,$ as s,n as p}from"./index.680aebaf.js";var u=Object.defineProperty,h=Object.getOwnPropertyDescriptor,m=(e,t,a,n)=>{for(var i=n>1?void 0:n?h(t,a):t,o=e.length-1,r;o>=0;o--)(r=e[o])&&(i=(n?r(t,a,i):r(i))||i);return n&&i&&u(t,a,i),i},c=function(){var e,t;alert("actifReadyNotif!"),Notification.requestPermission(function(a){a==="granted"&&navigator.serviceWorker.ready.then(function(n){n.showNotification("Celenganku sudah Aktif!")})}),(t=(e=navigator==null?void 0:navigator.serviceWorker)==null?void 0:e.controller)==null||t.postMessage({func:"setNotifAvailable",value:!0})};let d=class extends l{static get styles(){return f`
+import{s as d,r as f,$ as s,n as u}from"./index.1c82cf1a.js";var p=Object.defineProperty,h=Object.getOwnPropertyDescriptor,m=(e,t,a,n)=>{for(var i=n>1?void 0:n?h(t,a):t,o=e.length-1,r;o>=0;o--)(r=e[o])&&(i=(n?r(t,a,i):r(i))||i);return n&&i&&p(t,a,i),i},c=function(){var e,t;alert("Celenganku sudah Aktif!"),Notification.requestPermission(function(a){a==="granted"&&navigator.serviceWorker.ready.then(function(n){n.showNotification("Celenganku sudah Aktif!")})}),(t=(e=navigator==null?void 0:navigator.serviceWorker)==null?void 0:e.controller)==null||t.postMessage({func:"setNotifAvailable",value:!0})};let l=class extends d{static get styles(){return f`
 
     fluent-card {
       padding: 0px 18px 18px;
@@ -58,5 +58,5 @@ import{s as l,r as f,$ as s,n as p}from"./index.680aebaf.js";var u=Object.define
         </fluent-card>
 		-->
       </div>
-    `}};d=m([p("app-main")],d);export{d as AppMain};
-//# sourceMappingURL=app-main.6c867289.js.map
+    `}};l=m([u("app-main")],l);export{l as AppMain};
+//# sourceMappingURL=app-main.fd80dd20.js.map

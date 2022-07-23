@@ -1,4 +1,4 @@
-import{s as c,r as p,$ as d,n as i}from"./index.680aebaf.js";var u=Object.defineProperty,h=Object.getOwnPropertyDescriptor,f=(o,e,n,a)=>{for(var t=a>1?void 0:a?h(e,n):e,s=o.length-1,r;s>=0;s--)(r=o[s])&&(t=(a?r(e,n,t):r(t))||t);return a&&t&&u(e,n,t),t};let l=class extends c{static get styles(){return p`
+import{s as c,r as p,$ as d,n as i}from"./index.1c82cf1a.js";var u=Object.defineProperty,h=Object.getOwnPropertyDescriptor,f=(o,e,n,a)=>{for(var t=a>1?void 0:a?h(e,n):e,s=o.length-1,r;s>=0;s--)(r=o[s])&&(t=(a?r(e,n,t):r(t))||t);return a&&t&&u(e,n,t),t};let l=class extends c{static get styles(){return p`
 
     fluent-card {
       padding: 0px 18px 18px;
@@ -49,4 +49,4 @@ import{s as c,r as p,$ as d,n as i}from"./index.680aebaf.js";var u=Object.define
 		-->
       </div>
     `}};l=f([i("app-susunkata")],l);export{l as AppMain};
-//# sourceMappingURL=app-susunkata.48e17bcd.js.map
+//# sourceMappingURL=app-susunkata.84c65c80.js.map
