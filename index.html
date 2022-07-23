@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>PWA Starter</title>
+  <title>Celenganku</title>
 
   <base href="/" />
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
   <meta name="viewport"
     content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <meta name="description" content="This is a PWA Starter app" />
+  <meta name="description" content="Aplikasi isi celengan online" />
   <meta name="theme-color" content="#E1477E" />
 
   <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="PWA Starter" />
+  <meta name="apple-mobile-web-app-title" content="Celenganku" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
@@ -24,26 +24,49 @@
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="/manifest.json" />
 
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" media="screen">
+  <script src="/assets/js/sharer.min.js"></script>
+
   <script type="module" src="https://unpkg.com/@fluentui/web-components" crossorigin="anonymous"></script>
 
   
-  <script type="module" crossorigin src="/code/index.229defef.js"></script>
+  
+  <script type="module" crossorigin src="/code/index.2b41c0d8.js"></script>
   <link rel="stylesheet" href="/code/index.c492f108.css">
-</head>
+<link rel="manifest" href="/manifest.webmanifest"></head>
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
   <fluent-design-system-provider>
     <app-index></app-index>
   </fluent-design-system-provider>
+  <div id="sharerelemtns" style="display:none;">
+	<a href="/susunkata" style="display:none;" id="reftosusun">Klik Untuk Lanjut</a>
+	<button class="button" data-sharer="twitter" data-title="Hai, tolong bantu ingatkan saya untuk menabung hingga 100.000.000 Koin, dan Anda juga bisa mendapatkan hadiah susun kata solver.Klik link di bawah ini untuk membantu saya." data-hashtags="celenganku, snackvid" data-url="https://celenganku.github.io/" onclick="btnclicked()">Share on Twitter</button>
+	<button class="button" data-sharer="facebook" data-hashtag="celenganku" data-url="https://celenganku.github.io/" onclick="btnclicked()">Share on Facebook</button>
+	<button class="button" data-sharer="whatsapp" data-title="Hai, tolong bantu ingatkan saya untuk menabung hingga 100.000.000 Koin, dan Anda juga bisa mendapatkan hadiah susun kata solver.Klik link di bawah ini untuk membantu saya." data-url="https://celenganku.github.io/" onclick="btnclicked()">Share on Whatsapp</button>
+	<button class="button" data-sharer="telegram" data-title="Hai, tolong bantu ingatkan saya untuk menabung hingga 100.000.000 Koin, dan Anda juga bisa mendapatkan hadiah susun kata solver.Klik link di bawah ini untuk membantu saya." data-url="https://celenganku.github.io/" onclick="btnclicked()">Share on Telegram</button>  
+  </div>
 
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register(
-        import.meta.env.MODE === 'production' ? '/sw.js' : '/sw.js?dev-sw'
-      );
-    }
+    function btnclicked(){
+  console.log('click');
+  const now = new Date();
+  console.log(now);
+  const datenow = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  console.log(datenow);
+  const datenowint = Date.parse(datenow.toString());
+  console.log(datenowint);
+  localStorage.setItem("shareddated",""+datenowint);
+  setTimeout(myGreeting, 4000);
+}
+
+function myGreeting() {
+  document.getElementById("reftosusun")?.setAttribute("style", "display:block;");
+}
   </script>
+
+  
 </body>
 
 </html>
